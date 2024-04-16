@@ -1,5 +1,13 @@
+import CounterFc from './Components/CounterFc';
+import Countercl from './Components/Countercl';
+
 function App() {
-  return 'hello';
+  return (
+    <>
+      <Countercl />
+      <CounterFc />
+    </>
+  );
 
   // --steps
   // React DOm creates a Root
