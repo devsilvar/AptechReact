@@ -1,18 +1,13 @@
-import CounterFc from './Components/CounterFc';
-import Countercl from './Components/Countercl';
+import Students from './component/Students';
+import Reusable from './component/Reusable';
 
 function App() {
   return (
     <>
-      <Countercl />
-      <CounterFc />
+      <Students noOfSTudents={13} pa='Eniola' />
+      <Reusable heading='APtech Studenst' centerText={2} Ptext='great' />
+      <Reusable heading='APtech Studenst' centerText={1} Ptext='Uthman' />
     </>
   );
-
-  // --steps
-  // React DOm creates a Root
-  // The id root inside the HTML is located and selected
-  // The app componenet is rendered  in main.jsx
-  // The result of the rendering is sent to the Root   - index.html
 }
 export default App;
