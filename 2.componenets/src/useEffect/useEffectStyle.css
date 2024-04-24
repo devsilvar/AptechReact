@@ -1,0 +1,22 @@
+section {
+  width: fit-content;
+  margin: auto;
+  padding-bottom: 30vh;
+}
+.effect-box {
+  width: 400px;
+  height: 499px;
+  background-color: aqua;
+}
+
+.effect-btn {
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  margin: auto;
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 12px;
+}

@@ -1,0 +1,16 @@
+.counter {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.counter button {
+  width: 70px;
+  height: 40px;
+  border-radius: 7px;
+  font-size: 1.5rem;
+}
+
+.counter div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
