@@ -1,0 +1,22 @@
+fieldset {
+  margin: auto;
+  width: 30%;
+  text-align: center;
+}
+
+input,
+textarea {
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: block;
+  margin: 10px auto;
+}
+
+button {
+  display: block;
+  margin: auto;
+}
+
+li {
+  display: block;
+}

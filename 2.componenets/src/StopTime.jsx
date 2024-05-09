@@ -18,9 +18,7 @@ const StopTime = () => {
 
   //when we start this function we want it to keep runing until we stop it. But for now we just want it to keep running so we need setinterval
 
-  useEffect(() => {
-    isPaused && clearInterval(timeCounter.current);
-  }, [isPaused]);
+ 
 
   const handleStart = () => {
     //whne we hit the startButton

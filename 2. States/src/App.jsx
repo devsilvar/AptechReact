@@ -4,14 +4,14 @@ import Counter from './Counter';
 import SideEffect from './SideEffect';
 
 function App() {
+  console.log('App componenet was renderd');
+
   return (
     <>
-      {/* <h2>Hello</h2> */}
       <Counter />
-
       <SideEffect />
     </>
   );
 }
-
+console.log(App);
 export default App;

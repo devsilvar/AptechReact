@@ -1,7 +1,12 @@
 import './App.css';
-import SimpleForm from './forms/SimpleForm';
+
+import TodoListnew from './todo/TodoListnew';
 function App() {
-  return <SimpleForm />;
+  return (
+    <>
+      <TodoListnew />
+    </>
+  );
 }
 
 export default App;

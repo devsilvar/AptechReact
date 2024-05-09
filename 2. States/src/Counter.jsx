@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { useState } from 'react';
 
 const Counter = () => {
+  console.log('Counter componenet was renderd');
   const [count, setCount] = useState(0);
 
   function increase() {
@@ -23,4 +24,6 @@ const Counter = () => {
     </div>
   );
 };
+
+console.log(Counter);
 export default Counter;

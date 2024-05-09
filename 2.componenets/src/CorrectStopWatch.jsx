@@ -53,9 +53,6 @@ const CorrectStopWatch = () => {
     setisPaused(true);
   };
 
-  const format = () => {
-    let format = `{convert seconds to Hours} : {convert seconds to Minutes} : {convert secodns to seconds}`;
-  };
   return (
     <section className='text-center my-5'>
       <h1 className='fs-1'>
@@ -74,15 +71,20 @@ const CorrectStopWatch = () => {
       <p>Stop Watch Timer</p>
       <div className=' d-flex justify-content-center gap-3 py-3'>
         {isActive ? (
-          <button className='btn btn-secondary rounded-3' onClick={handlePause}>
-            Pause
-          </button>
+          isRunning && (
+            <button
+              className='btn btn-secondary rounded-3'
+              onClick={handlePause}
+            >
+              Pause
+            </button>
+          )
         ) : (
           <button className='btn btn-success' onClick={handleStart}>
             Start
           </button>
         )}
-        {isActive && isPaused && (
+        {isActive && isPaused && isRunning == false && (
           <button className='btn btn-warning rounded-3' onClick={handleResume}>
             Resume
           </button>
