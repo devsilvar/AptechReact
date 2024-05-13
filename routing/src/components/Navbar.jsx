@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import './component.css';
 
 const Navbar = () => {
   return (
@@ -23,24 +24,24 @@ const Navbar = () => {
           <div className='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
               <li className='nav-item'>
-                <Link className='nav-link active' aria-current='page' to='/'>
+                <NavLink className='nav-NavLink' aria-current='page' to='/'>
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className='nav-item'>
-                <Link className='nav-link' to='/about'>
+                <NavLink className='nav-NavLink' to='/about'>
                   About
-                </Link>
+                </NavLink>
               </li>
               <li className='nav-item'>
-                <Link className='nav-link' to='/contact'>
+                <NavLink className='nav-NavLink' to='/contact'>
                   Contact
-                </Link>
+                </NavLink>
               </li>
               <li className='nav-item'>
-                <Link className='nav-link' to='/products'>
+                <NavLink className='nav-NavLink' to='/products'>
                   Products
-                </Link>
+                </NavLink>
               </li>
             </ul>
             <div className='d-flex gap-3' role='search'>

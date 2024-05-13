@@ -23,19 +23,19 @@ function App() {
         </ul>
       </nav>
 
-      <Routes>
+      {/* <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/books' element={<Booklayout />}>
           <Route index element={<Booklist />} />
           <Route path=':id' element={<Book />} />
           <Route path='new' element={<Newbook />} />
-        </Route>
+        </Route> */}
 
         {/* <Route path='/books' element={<Booklist />} />
         <Route path='/books/:id' element={<Book />} />
         <Route path='/books/new' element={<Newbook />} /> */}
-        <Route path='*' element={<Notfound />} />
-      </Routes>
+        {/* <Route path='*' element={<Notfound />} />
+      </Routes> */}
     </>
   );
 }

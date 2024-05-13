@@ -1,0 +1,10 @@
+.nav-NavLink {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  width: 7vw;
+}
+
+.active {
+  color: red;
+}
