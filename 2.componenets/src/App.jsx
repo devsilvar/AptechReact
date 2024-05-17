@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
-
+import CorrectStopWatch from './component/CorrectStopWatch';
 // import Counter from './Counter';
 // import StopWatch from './StopWatch';
 // import StopTime from './StopTime';
 // import UseEffectSample from './useEffect/UseEffectSample';
-// import CorrectStopWatch from './CorrectStopWatch';
 // import UseRefSamples from './useRef/UseRefSamples';
 // import ResizeSc from './screenResize/ResizeSc';
 // import ParentComp from './ParentComp';
@@ -14,8 +13,8 @@ import COunter from './counter/COunter';
 function App() {
   return (
     <>
-      {/* <StopTime />
       <CorrectStopWatch />
+      {/* <StopTime />
       <UseEffectSample />
       <UseRefSamples />
       <ResizeSc /> */}

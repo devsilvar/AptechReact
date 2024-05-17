@@ -5,9 +5,7 @@ import { productData } from '../utils/data';
 const Productlayout = () => {
   const [Datas, setDatas] = useState(productData);
 
-  const goToDetails = (index) => {
-    console.log(index);
-  };
+
   return (
     <>
       <div className='d-flex gap-3 justify-content-center my-5'>

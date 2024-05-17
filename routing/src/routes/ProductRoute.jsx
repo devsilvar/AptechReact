@@ -9,11 +9,10 @@ const ProductRoute = () => {
   return (
     <div>
       <Routes>
-        <Route path='/' element={<Productlayout />}>
-          <Route index element={<Products />} />
-          <Route path=':id' element={<ProductDetail />} />
-          <Route path='*' element={<NotFound />} />
-        </Route>
+        <Route path='/products' element={<Productlayout />} />
+        <Route path="/products" element={<Products />} />
+        <Route path='/products/:id' element={<ProductDetail />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </div>
   );

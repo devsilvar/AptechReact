@@ -4,9 +4,28 @@ import Footer from '../Footer';
 
 const Root = () => {
   return (
-    <section>
-      <h1>I am the root</h1>
-    </section>
+    <>
+      <nav>
+        <ul>
+          <li>
+            {' '}
+            <Link to='/'>Home </Link>{' '}
+          </li>
+          <li>
+            <Link to='/about'>About </Link>
+          </li>
+          <li>
+            <Link to='/contact'>Contact </Link>
+          </li>
+          <li>
+            <Link to='/books'>Booklist </Link>
+          </li>
+        </ul>
+      </nav>
+      <Outlet />
+
+      <Footer />
+    </>
   );
 };
 

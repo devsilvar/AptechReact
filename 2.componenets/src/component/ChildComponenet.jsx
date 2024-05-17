@@ -7,7 +7,7 @@ const ChildComponenet = ({ name, age, gender }) => {
       Name : {name}
       Age: {age}
       Gnder:{gender}
-      <LittleChild />
+      <LittleChild gender={gender} />
     </div>
   );
 };

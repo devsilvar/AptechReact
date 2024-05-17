@@ -26,7 +26,7 @@ const Booklayout = () => {
             <Link to='/books/new'> Create New Book </Link>
           </li>
         </ol>
-        <Outlet />{' '}
+        <Outlet />
       </section>
     </>
   );
