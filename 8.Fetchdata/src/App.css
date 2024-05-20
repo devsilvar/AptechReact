@@ -1,0 +1,51 @@
+.posts {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.posts div {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 2px solid black;
+  text-align: center;
+  width: 300px;
+  height: max-content;
+  padding: 15px;
+}
+
+form {
+  width: 30%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  border: 5px solid black;
+  row-gap: 20px;
+  justify-content: center;
+}
+
+label {
+  display: block;
+}
+form input {
+  margin: auto;
+  width: 100%;
+  padding: 5px 0px;
+}
+
+button {
+  width: 100%;
+}
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.users div {
+  background-color: rgb(241, 238, 238);
+  padding: 15px;
+}
