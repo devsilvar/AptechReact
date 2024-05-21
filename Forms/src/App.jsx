@@ -1,9 +1,9 @@
-import './App.css';
-import TodoListnew from './todo/TodoListnew';
+import ValidateForm from './formValidation/ValidateForm';
+import FormValidate from './simpleForm/FormValidate';
 function App() {
   return (
     <>
-      <TodoListnew />
+      <ValidateForm />
     </>
   );
 }

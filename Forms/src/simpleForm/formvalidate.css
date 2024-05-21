@@ -1,0 +1,36 @@
+.danger {
+  color: red;
+}
+
+form {
+  width: max-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  border: 2px solid silver;
+  background-color: white;
+}
+
+input {
+  padding: 6px 18px;
+  width: 300px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 22px;
+  display: block;
+}
+
+button.btn {
+  margin-top: 22px;
+  border-radius: 22px;
+  color: white;
+  width: 50%;
+  padding: 9px 16px;
+  border: 2px solid transparent;
+  background-color: black;
+}
+
+sub {
+  width: inherit;
+}
