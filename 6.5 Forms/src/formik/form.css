@@ -1,0 +1,9 @@
+.form-block {
+  position: relative;
+}
+
+.form-block img {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+}
