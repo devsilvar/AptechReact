@@ -1,8 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './component.css';
-
+import { useTheme } from '../Context/DarkModeContext';
+import { useAutheticate } from '../Context/AuthContext';
 const Navbar = () => {
+  const { mode, toggleMode } = useTheme();
+  const { AuthState, setAuthState } = useAutheticate();
+
   return (
     <>
       <nav className='navbar navbar-expand-lg bg-body-tertiary p-3 '>
@@ -45,10 +49,23 @@ const Navbar = () => {
               </li>
             </ul>
             <div className='d-flex gap-3' role='search'>
-              <button className='btn btn-warning'>Sign in</button>
-              <button className='btn btn-danger' type='submit'>
-                Sign Out
-              </button>
+              <button onClick={toggleMode}>ChangeMode</button>
+              {AuthState == 'loggedout' ? (
+                <button
+                  className='btn btn-warning'
+                  onClick={setAuthState('loggedin')}
+                >
+                  Sign in
+                </button>
+              ) : (
+                <button
+                  className='btn btn-danger'
+                  onClick={setAuthState('loggedout')}
+                  type='submit'
+                >
+                  Sign Out
+                </button>
+              )}
             </div>
           </div>
         </div>

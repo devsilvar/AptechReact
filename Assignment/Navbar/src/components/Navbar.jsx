@@ -44,9 +44,7 @@ const Navbar = () => {
           />
 
           <div
-            className={
-              isNavOpen == true ? 'smallLink' : 'smallLink hidenav'
-            }
+            className={isNavOpen == true ? 'smallLink' : 'smallLink hidenav'}
           >
             <ul>
               <li>
